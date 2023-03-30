@@ -1,7 +1,9 @@
 import random
 
+
 def hw2():
     print("\nHw2: Battleship")
+
     def gen_list(n):
         list = []
         for i in range(n):
@@ -32,8 +34,9 @@ def hw2():
     score_1 = 0
     score_2 = 0
 
-    print(f"\nĐiểm danh tàu của hai người chơi:\n- Người chơi 1: {lst_1}\n- Người chơi 2: {lst_2}")
-
+    print(
+        f"\nĐiểm danh tàu của hai người chơi:\n- Người chơi 1: {lst_1}\n- Người chơi 2: {lst_2}"
+    )
 
     while round <= 3 or round <= so_tau:
         print(f"\nRound {round}:")
@@ -47,19 +50,29 @@ def hw2():
             score_2 += 1
             lst_1.remove(user_2_turns)
 
-        print(f"-> [Round {round}] Điểm số của người chơi 1 và 2 là {score_1} : {score_2}")
+        print(
+            f"-> [Round {round}] Điểm số của người chơi 1 và 2 là {score_1} : {score_2}"
+        )
         round += 1
 
     if score_1 < score_2:
-        print(f"\n[Game Over] Người chơi 2 chiến thắng. Tỉ số trung cuộc: {score_1} : {score_2}\n")
+        print(
+            f"\n[Game Over] Người chơi 2 chiến thắng. Tỉ số trung cuộc: {score_1} : {score_2}\n"
+        )
     elif score_1 > score_2:
-        print(f"\n[Game Over] Người chơi 1 chiến thắng. Tỉ số trung cuộc: {score_1} : {score_2}\n")
+        print(
+            f"\n[Game Over] Người chơi 1 chiến thắng. Tỉ số trung cuộc: {score_1} : {score_2}\n"
+        )
     elif score_1 == score_2:
-        print(f"\n[Game Over] Hai người chơi hoà nhau. Tỉ số trung cuộc: {score_1} : {score_2}\n")
+        print(
+            f"\n[Game Over] Hai người chơi hoà nhau. Tỉ số trung cuộc: {score_1} : {score_2}\n"
+        )
+
 
 def main():
     hw2()
     return
 
-if __name__ == '__main__':
-  main()
+
+if __name__ == "__main__":
+    main()
